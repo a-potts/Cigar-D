@@ -15,6 +15,8 @@
 		45CF141D276A5E98001689F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CF141B276A5E98001689F5 /* LaunchScreen.storyboard */; };
 		45CF1428276A5E98001689F5 /* Cigar_DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1427276A5E98001689F5 /* Cigar_DTests.swift */; };
 		45CF1433276A5E98001689F5 /* Cigar_DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1432276A5E98001689F5 /* Cigar_DUITests.swift */; };
+		45CF1448276A738E001689F5 /* Cigar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1447276A738E001689F5 /* Cigar.swift */; };
+		45CF144D276A7408001689F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF144C276A7408001689F5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		45CF142E276A5E98001689F5 /* Cigar'DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cigar'DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CF1432276A5E98001689F5 /* Cigar_DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cigar_DUITests.swift; sourceTree = "<group>"; };
 		45CF1434276A5E98001689F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45CF1447276A738E001689F5 /* Cigar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cigar.swift; sourceTree = "<group>"; };
+		45CF144C276A7408001689F5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		45CF140F276A5E8B001689F5 /* Cigar'D */ = {
 			isa = PBXGroup;
 			children = (
+				45CF1451276A771F001689F5 /* View */,
+				45CF1446276A7380001689F5 /* Model */,
 				45CF1410276A5E8B001689F5 /* AppDelegate.swift */,
 				45CF1412276A5E8B001689F5 /* SceneDelegate.swift */,
 				45CF1414276A5E8B001689F5 /* ViewController.swift */,
@@ -126,6 +132,22 @@
 				45CF1434276A5E98001689F5 /* Info.plist */,
 			);
 			path = "Cigar'DUITests";
+			sourceTree = "<group>";
+		};
+		45CF1446276A7380001689F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45CF1447276A738E001689F5 /* Cigar.swift */,
+				45CF144C276A7408001689F5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45CF1451276A771F001689F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CF1448276A738E001689F5 /* Cigar.swift in Sources */,
 				45CF1415276A5E8B001689F5 /* ViewController.swift in Sources */,
 				45CF1411276A5E8B001689F5 /* AppDelegate.swift in Sources */,
+				45CF144D276A7408001689F5 /* User.swift in Sources */,
 				45CF1413276A5E8B001689F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
