@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45C1D0B1276B89130034E9A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C1D0B0276B89130034E9A1 /* SignUpViewController.swift */; };
 		45CF1411276A5E8B001689F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1410276A5E8B001689F5 /* AppDelegate.swift */; };
 		45CF1413276A5E8B001689F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1412276A5E8B001689F5 /* SceneDelegate.swift */; };
 		45CF1415276A5E8B001689F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF1414276A5E8B001689F5 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45C1D0B0276B89130034E9A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		45CF140D276A5E8B001689F5 /* Cigar'D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cigar'D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CF1410276A5E8B001689F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45CF1412276A5E8B001689F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		45CF1451276A771F001689F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45C1D0B0276B89130034E9A1 /* SignUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C1D0B1276B89130034E9A1 /* SignUpViewController.swift in Sources */,
 				45CF1448276A738E001689F5 /* Cigar.swift in Sources */,
 				45CF1415276A5E8B001689F5 /* ViewController.swift in Sources */,
 				45CF1411276A5E8B001689F5 /* AppDelegate.swift in Sources */,
