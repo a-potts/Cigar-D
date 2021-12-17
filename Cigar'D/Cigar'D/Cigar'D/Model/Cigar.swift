@@ -10,10 +10,10 @@ import Foundation
 class Cigar {
     
     var cigarBrand: String
-    var cigarDate: Date
+    var cigarDate: String
     var cigarLocation: String
     
-    init(cigarBrand: String, cigarDate: Date, cigarLocation: String) {
+    init(cigarBrand: String, cigarDate: String, cigarLocation: String) {
         self.cigarBrand = cigarBrand
         self.cigarDate = cigarDate
         self.cigarLocation = cigarLocation

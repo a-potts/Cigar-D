@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="876.81159420289862" y="73.660714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--User Profile View Controller-->
         <scene sceneID="58D-tc-PK0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="NWY-XN-1b2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="NWY-XN-1b2" customClass="UserProfileViewController" customModule="Cigar_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vc-ER-wRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,12 +197,21 @@
                                     <constraint firstAttribute="width" constant="374" id="Ocg-L9-Rdq"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DJV-cH-QAX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CigarCell" textLabel="QVi-7a-p6b" style="IBUITableViewCellStyleDefault" id="DJV-cH-QAX">
                                         <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DJV-cH-QAX" id="tGR-ch-eME">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QVi-7a-p6b">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fEm-P6-Xii">
@@ -258,6 +267,20 @@
                                     <action selector="registerButton:" destination="IAv-6H-kdf" eventType="touchUpInside" id="aqx-O9-hF7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-0G-2oC">
+                                <rect key="frame" x="245" y="191" width="92" height="32"/>
+                                <color key="backgroundColor" red="0.59063935970000003" green="0.98770621830000005" blue="0.25861383980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="YZG-FE-WgK"/>
+                                    <constraint firstAttribute="width" constant="92" id="thV-J4-7fQ"/>
+                                </constraints>
+                                <state key="normal" title="Add Cigar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nMY-W6-7uq" kind="presentation" id="qRT-sP-VKq"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 5 Cigars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shp-3r-0s1">
                                 <rect key="frame" x="146" y="288" width="122" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
@@ -277,7 +300,9 @@
                             <constraint firstItem="WEb-T5-eN1" firstAttribute="top" secondItem="bga-jD-xJE" secondAttribute="top" constant="57" id="G9E-Hj-zTW"/>
                             <constraint firstItem="1v6-Tg-dbN" firstAttribute="top" secondItem="shp-3r-0s1" secondAttribute="bottom" constant="8" symbolic="YES" id="HDh-2m-wKZ"/>
                             <constraint firstItem="sEm-KS-yX1" firstAttribute="top" secondItem="bga-jD-xJE" secondAttribute="top" constant="70" id="IJu-UB-8wq"/>
+                            <constraint firstItem="bga-jD-xJE" firstAttribute="trailing" secondItem="iTU-0G-2oC" secondAttribute="trailing" constant="77" id="NR8-K6-RKu"/>
                             <constraint firstItem="EPG-EK-ZVe" firstAttribute="top" secondItem="sEm-KS-yX1" secondAttribute="bottom" constant="8" symbolic="YES" id="Sb3-1e-CiO"/>
+                            <constraint firstItem="iTU-0G-2oC" firstAttribute="top" secondItem="EPG-EK-ZVe" secondAttribute="bottom" constant="8" symbolic="YES" id="cns-Rl-SgE"/>
                             <constraint firstItem="zt3-hY-PvJ" firstAttribute="leading" secondItem="bga-jD-xJE" secondAttribute="leading" constant="95" id="fIF-iJ-bZ1"/>
                             <constraint firstItem="bga-jD-xJE" firstAttribute="trailing" secondItem="sEm-KS-yX1" secondAttribute="trailing" constant="56" id="kJ9-mz-vnJ"/>
                             <constraint firstItem="bga-jD-xJE" firstAttribute="trailing" secondItem="shp-3r-0s1" secondAttribute="trailing" constant="146" id="sRl-vf-eR5"/>
@@ -286,10 +311,83 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H6a-OS-Vwi"/>
+                    <connections>
+                        <outlet property="topFiveTableView" destination="1v6-Tg-dbN" id="uNZ-qz-g7m"/>
+                        <outlet property="totalCigars" destination="EPG-EK-ZVe" id="Mea-hm-i40"/>
+                        <outlet property="userImage" destination="WEb-T5-eN1" id="cxz-OZ-v8B"/>
+                        <outlet property="userName" destination="sEm-KS-yX1" id="FX0-tz-bPh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxj-KM-tTQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1649.2753623188407" y="80.357142857142847"/>
+        </scene>
+        <!--Add Cigar View Controller-->
+        <scene sceneID="aLb-S9-HuQ">
+            <objects>
+                <viewController id="nMY-W6-7uq" customClass="AddCigarViewController" customModule="Cigar_D" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2E-fL-FFx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cigar Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzl-kz-8Q3">
+                                <rect key="frame" x="110" y="45" width="194" height="46"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-9U-rYr">
+                                <rect key="frame" x="82" y="111" width="252" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pWE-7d-gUr"/>
+                                    <constraint firstAttribute="width" constant="252" id="vh3-UV-qRJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzv-lA-qbV">
+                                <rect key="frame" x="96" y="668" width="224" height="52"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="224" id="1Jl-ey-sGw"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="224" id="6LJ-10-DLB"/>
+                                    <constraint firstAttribute="height" constant="52" id="Phv-7f-VZe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="UFf-wd-IQs"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="52" id="iO0-XD-eZb"/>
+                                    <constraint firstAttribute="width" constant="224" id="moB-rX-yOC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="oug-Ji-8sc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="52" id="zf0-Ba-QnQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Save Cigar">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="IAv-6H-kdf" eventType="touchUpInside" id="IQ3-wM-zLE"/>
+                                    <action selector="saveCigarButton:" destination="nMY-W6-7uq" eventType="touchUpInside" id="4IK-gV-BiD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0GV-OQ-DM5"/>
+                        <color key="backgroundColor" red="0.0070444584570000003" green="0.0" blue="0.29471367389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0GV-OQ-DM5" firstAttribute="trailing" secondItem="Rzv-lA-qbV" secondAttribute="trailing" constant="94" id="6Nc-gq-xsS"/>
+                            <constraint firstItem="Rzv-lA-qbV" firstAttribute="leading" secondItem="0GV-OQ-DM5" secondAttribute="leading" constant="96" id="MtJ-Ui-Jib"/>
+                            <constraint firstItem="0GV-OQ-DM5" firstAttribute="trailing" secondItem="jO4-9U-rYr" secondAttribute="trailing" constant="80" id="Zcq-mI-Q0u"/>
+                            <constraint firstItem="0GV-OQ-DM5" firstAttribute="trailing" secondItem="hzl-kz-8Q3" secondAttribute="trailing" constant="110" id="eSt-HT-SKM"/>
+                            <constraint firstItem="jO4-9U-rYr" firstAttribute="leading" secondItem="0GV-OQ-DM5" secondAttribute="leading" constant="82" id="iww-mp-rF3"/>
+                            <constraint firstItem="0GV-OQ-DM5" firstAttribute="bottom" secondItem="Rzv-lA-qbV" secondAttribute="bottom" constant="88" id="kfm-3m-nB1"/>
+                            <constraint firstItem="hzl-kz-8Q3" firstAttribute="top" secondItem="0GV-OQ-DM5" secondAttribute="top" constant="45" id="sEM-nA-8Iz"/>
+                            <constraint firstItem="jO4-9U-rYr" firstAttribute="top" secondItem="hzl-kz-8Q3" secondAttribute="bottom" constant="20" id="sRZ-ww-d4k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cigarBrandTextField" destination="jO4-9U-rYr" id="nmh-hi-uwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Og-Gq-7yC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2453.6231884057975" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
@@ -299,6 +397,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
